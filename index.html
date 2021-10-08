@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parararara ey! pararara</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.drop {
+  border: 2px dashed rgb(184, 76, 76);
+  height: 500px;
+  width: 700px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drop.active {
+  background-color: #b8d4fe;
+  color: black;
+  border: 2px dashed #618ac9;
+}
+.drop .icon {
+  font-size: 100px;
+  color: #000;
+}
+.drop header {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+h2{
+    color: rgb(77, 9, 7);
+}
+.drop span {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(134, 104, 104);
+  margin: 55px 0 55px 0;
+}
+.drop button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  background: #8a1a0b;
+  border-radius: 10px;
+  cursor: pointer;
+  animation-duration: 5s;
+
+
+}
+.drop button:hover {
+    animation-name: bob-esponja;
+    animation-timing-function: ease;
+}
+@keyframes bob-esponja {
+  100%  { transform: translateY(1000px); }
+}
+.drop img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+<form id="Drag">
+    <div class="drop">
+        <h2>Ö Drag and Drop Ö</h2>
+        <span>ó</span>
+        <button>Selec File</button>
+        <input type="file" id="in-put" hidden multiple/>
+    </div>
+    <div id="vista"></div>
+</form>
+    <script src="main.js"></script>
+</body>
+</html>
